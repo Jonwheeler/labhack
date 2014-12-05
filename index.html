@@ -1,0 +1,1316 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--
+
+ /$$      /$$           /$$                                                   /$$$$$$$$       
+| $$  /$ | $$          | $$                                                  |__  $$__/       
+| $$ /$$$| $$  /$$$$$$ | $$  /$$$$$$$  /$$$$$$  /$$$$$$/$$$$   /$$$$$$          | $$  /$$$$$$ 
+| $$/$$ $$ $$ /$$__  $$| $$ /$$_____/ /$$__  $$| $$_  $$_  $$ /$$__  $$         | $$ /$$__  $$
+| $$$$_  $$$$| $$$$$$$$| $$| $$      | $$  \ $$| $$ \ $$ \ $$| $$$$$$$$         | $$| $$  \ $$
+| $$$/ \  $$$| $$_____/| $$| $$      | $$  | $$| $$ | $$ | $$| $$_____/         | $$| $$  | $$
+| $$/   \  $$|  $$$$$$$| $$|  $$$$$$$|  $$$$$$/| $$ | $$ | $$|  $$$$$$$         | $$|  $$$$$$/
+|__/     \__/ \_______/|__/ \_______/ \______/ |__/ |__/ |__/ \_______/         |__/ \______/ 
+                                                                                              
+                                                                                              
+                                                                                              
+ /$$                 /$$       /$$   /$$                     /$$                              
+| $$                | $$      | $$  | $$                    | $$                              
+| $$        /$$$$$$ | $$$$$$$ | $$  | $$  /$$$$$$   /$$$$$$$| $$   /$$                        
+| $$       |____  $$| $$__  $$| $$$$$$$$ |____  $$ /$$_____/| $$  /$$/                        
+| $$        /$$$$$$$| $$  \ $$| $$__  $$  /$$$$$$$| $$      | $$$$$$/                         
+| $$       /$$__  $$| $$  | $$| $$  | $$ /$$__  $$| $$      | $$_  $$                         
+| $$$$$$$$|  $$$$$$$| $$$$$$$/| $$  | $$|  $$$$$$$|  $$$$$$$| $$ \  $$                        
+|________/ \_______/|_______/ |__/  |__/ \_______/ \_______/|__/  \__/                        
+                                                                                              
+ 
+ -->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LabHack &mdash; October 25 - 26, 2014</title>
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/assets/font-awesome-352f6eeb15eb47fdebbc1de00276b9a5.css">
+    <link rel="stylesheet" href="/assets/bootstrap-95a6349d47ea253b5e34a2160acf80ef.css">
+    <link rel="stylesheet" href="/assets/main-6f35894860c2cd78c9053aaa68b4e13e.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/images/afrl_logo_sm.png"/>
+    <link href="/feed.xml" rel="alternate" type="application/rss+xml" title="LabHack" />
+    <meta name="title" content="LabHack">
+    <link rel="canonical" href="http://www.labhack.org/">
+     
+           
+    <meta property="og:title" content="LabHack"/>
+    <meta property="og:url" content="http://www.labhack.org/"/>
+    
+    
+    <meta property="og:site_name" content="LabHack">     
+</head>
+<body>
+    
+    <header>
+<nav id="navigation" class="navbar flush navbar-default" role="navigation">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-top">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/" style="font-size: 2em;">LabHack <i class="fa fa-fighter-jet" style="vertical-align: middle;"></i></a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-collapse-top">
+
+        <ul class="nav navbar-nav">
+            <li><a href="/prizes">Challenges</a>
+            </li>
+            <li><a href="/schedule">Schedule</a>
+            </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tools <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="http://www.hackathon.io/afrl">Projects & Participants</a></li>
+            <li><a href="https://labhack.slack.com">Slack</a></li>
+            <li><a href="http://www.github.com/labhack">Github</a></li>
+            <li><a href="http://aws.amazon.com">AWS</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/about">Map, Hotels, Restaurants</a>
+            </li>
+            <li><a href="/faq">FAQ</a>
+            </li>
+            <li><a href="/blog">Blog</a>
+            </li>
+            <li class="divider"></li>
+            <li><a href="/contact">Contact Us</a></li>
+          </ul>
+        </li>
+
+
+
+
+            <li><a href="/faq/what_is_a_hackathon.html">What is a Hackathon?</a>
+            </li>
+
+
+        </ul>
+    </div>
+</nav>
+
+
+
+<div class="visible-lg">
+    <a href="https://github.com/codefordayton/labhack">
+        <img style="position: absolute; top: 0; right: 0; border: 0; width: 120px; height: 120px; z-index: 10;" src="/assets/github_ribbon-49cebcfb4afdf96fece4f23293ed3d38.png" alt="Fork me on GitHub">
+    </a>
+</div>
+
+    </header>
+
+<div id="blog-cover" class="blog-cover" style="background-image: url(/assets/default_bg-130a5123fe5d90eac94f7a5db8a5d91b.svg);" onerror="this.onerror=null; this.style='background-image: url(images/default_bg.png);'">
+
+    <section>
+        <div class="container">
+            <h1>The Air Force Hackathon</h1>
+            <h2>and Mini-Conference 2014</h2>
+            <div class="mission-accomplished" style="color: white; margin-top: 3em;">
+                    <h1><i class="fa fa-check-square-o"></i>Mission Accomplished!</h1>
+            </div>
+            <!-- <div class="countdown visible-md visible-lg" data-date="2014-10-26 13:45:00"></div> -->
+
+<!--             <div class="mailing-list">
+                <form class="pure-form" action="http://labhack.createsend.com/t/t/s/ijykti/" method="post">
+                    <label for="email"><i class="fa fa-envelope fa-3x"></i></label>
+                    <input type="email" name="cm-ijykti-ijykti" placeholder="Email" required>
+            </div> -->
+        
+        </div>
+
+
+    </section>
+</div>
+<div class="container">
+   <section id="intro">
+    <p>
+    Thank you for attending LabHack, the first Air Force hackathon. We hope you can join us at future LabHacks!</p>
+
+    <p>
+    This was a chance for participants to show off programming, design and data science skills by building solutions to real-world challenges that AFRL researchers encounter every day. We provided the food, location, big network pipelines and challenges. We had cash prizes, workshops, talks, swag and fun events along the way. The event was open to the public.</p>
+
+    <div id="airforce-tv" class="embed-responsive embed-responsive-16by9">
+        <iframe src="http://www.youtube.com/embed/neCgy7eiP44" allowfullscreen></iframe>
+    </div>
+    <ul>
+        <li><a href="/faq/what_is_a_hackathon.html">What: A hackathon on data and sensors</a>
+        </li>
+        <li><a href="/schedule">When: Saturday, 25 October 2014 - Sunday, 26 October 2014</a>
+        </li>
+        <li><a href="/about">Where: WBI Tec^Edge Innovation and Collaboration Center, Dayton, OH</a>
+        </li>
+        <li>Why: To learn something new, build something awesome and have fun!</li>
+        <li>Who: This event was open to the public. Anyone, military or civilian, could participate.</li>
+    </ul>
+
+    For more questions and answers, see our <a href="/faq">FAQ</a>.
+</section>
+<hr/>
+<div class="row">
+    <h2>Winning Teams</h2>
+
+
+AFRL Prize:
+
+<ul>
+<li> 1st ($600 + 1 year silver subscription to Github):  <a href="http://www.hackathon.io/eye-movement">Eye Movement - EOG Data Display</a> (<a href="http://www.github.com/labhack/megatron">Source Code</a>)</li>
+<li> 2nd ($300 + 1 year bronze subscription to Github): <a href="http://www.hackathon.io/physiological-data">Physiological Data Visualization</a> (<a href="http://www.github.com/labhack/mega">Source Code</a>)</li>
+<li> 3rd ($150 + 6 months bronze subscription to Github): <a href="http://www.hackathon.io/jammer-detection">Jammer Detection</a> (<a href="http://www.github.com/labhack/whiskeynovember">Source Code</a>)</li>
+</ul>
+
+Community Prize:
+Each team member gets to choose O'Reilly book or Dayton Dragons Gear
+<ul>
+<li>1st: <a href="http://www.hackathon.io/human-laboratory">HUMAN Laboratory Formal Study 1 Analysis</a> (<a href="http://www.github.com/labhack/freemeals">Source Code</a>)</li>
+<li>2nd: <a href="http://www.hackathon.io/personnel-monitoring">Personnel Monitoring with Lightweight UDP Datagrams for Intermittent Connections</a> (<a href="http://www.github.com/labhack/UDP-personnel-monitoring">Source Code</a>)</li>
+<li>3rd: <a href="http://www.hackathon.io/afrl-human">AFRL Human Laboratory Challenge 2</a> (<a href="http://www.github.com/labhack/honeybadgers">Source Code</a>)</li>
+</ul>
+
+Judges Award:
+Gave two Dayton Dragons hats to Health Monitoring, <a href="http://www.hackathon.io/health-monitoring">Alert System, and Spotty Connection</a>(<a href="http://www.github.com/labhack/spottyconnection">Source Code</a>).
+
+</div>
+<hr/>
+<div id="left-col" class="col-lg-8">
+    <h3 class="text-center">What Do You Think of LabHack?</h3>
+    <div id="testimonial" class="embed-responsive embed-responsive-16by9">
+        <iframe src="http://www.youtube.com/embed/QCn4AjkdEiU" allowfullscreen></iframe>
+    </div>
+
+    <h3 class="text-center">Day 1 Kickoff</h3>
+    <div id="kickoff" class="embed-responsive embed-responsive-16by9">
+        <iframe src="http://www.youtube.com/embed/jMEf1efhQZ8" allowfullscreen></iframe>
+    </div>
+
+    <h3 class="text-center">Day 1 Conference</h3>
+    <div id="conference" class="embed-responsive embed-responsive-16by9">
+        <iframe src="http://www.youtube.com/embed/MvSYIxF0FXw" allowfullscreen></iframe>
+    </div>
+
+    <h3 class="text-center">Day 2 Project Presentations</h3>
+    <div id="live-stream" class="embed-responsive embed-responsive-16by9">
+        <iframe src="http://www.youtube.com/embed/bhRPr8X2rT0" allowfullscreen></iframe>
+    </div>
+
+
+    <h3>Other links</h3>
+    <ul>
+        <li><a href="https://www.dropbox.com/sh/igkko6csbxve33h/AAAdwtSNJ43yUdTFs0Cq_yV_a?dl=0">Kickoff Presentation Slides</a>
+        </li>
+        <li><a href="https://twitter.com/hashtag/aflabhack">Tweets</a>
+        </li>
+    </ul>
+</div>
+<div id="social" class="col-lg-4 visible-lg">
+    <section id="social-feeds">
+        <div class="row display-block fb-like-box" data-href="https://www.facebook.com/airforcehackathon" data-height="250" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true" style="margin-bottom: 0.5em;"></div>
+        <div class="row display-block">
+            <a class="twitter-timeline" height="300" width="300" data-border-color="#FFFFFF" data-tweet-limit="4" href="https://twitter.com/hashtag/AFLabHack" data-widget-id="511364423668084736">#AFLabHack Tweets</a>
+        </div>
+
+    </section>
+
+</div>
+
+<hr/>
+<div id="funding-donors" class="row logos">
+    <h2 class="text-center">Donations</h2>
+                       
+    <div class="col-xs-12 col-sm-6 col-md-4 display-block">
+        <a href="http://redwall.us">
+            <img src="/assets/redwall-99dc653fa215c23f09b6d0d5ef17ef5e.png" alt="Redwall Technologies" class="img-responsive" />
+        </a>
+    </div>
+      
+    <div class="col-xs-12 col-sm-6 col-md-4 display-block">
+        <a href="http://tenet3.com/">
+            <img src="/assets/tenet3_logo-c376b140fa065eef519e8f8a84a415de.png" alt="Tenet3" class="img-responsive" />
+        </a>
+    </div>
+      
+    <div class="col-xs-12 col-sm-6 col-md-4 display-block">
+        <a href="http://www.codeforamerica.org">
+            <img src="/assets/cfa_logo-1f2dbb75cd5e412e10503b0a8111dde2.png" alt="Code For America" class="img-responsive" />
+        </a>
+    </div>
+      
+    <div class="col-xs-12 col-sm-6 col-md-4 display-block">
+        <a href="http://www.teradata.com/">
+            <img src="/assets/teradata_logo-0cf8016535d39130e75fe8fb34ecde05.png" alt="Teradata" class="img-responsive" />
+        </a>
+    </div>
+         
+</div>
+<hr/>
+
+<div id="in-kind" class="row logos">
+    <h2 class="text-center">In-Kind Support</h2>
+     
+    <div class="col-xs-12 col-sm-6 col-md-4 display-block">
+        <a href="http://www.wpafb.af.mil/AFRL/">
+            <img src="/assets/afrl_badge-71aae47afd52f695a81ab72f79366197.jpg" alt="Air Force Research Laboratory" class="img-responsive" />
+        </a>
+    </div>
+      
+    <div class="col-xs-12 col-sm-6 col-md-4 display-block">
+        <a href="http://www.oreilly.com/">
+            <img src="/assets/orm_logo2-c1d862c030fa78651fae54eae6d2bf8a.gif" alt="O'Reilly Books" class="img-responsive" />
+        </a>
+    </div>
+      
+    <div class="col-xs-12 col-sm-6 col-md-4 display-block">
+        <a href="http://www.codefordayton.org">
+            <img src="/assets/c4d_logo-65026982d94dc13241af003410168054.png" alt="Code for Dayton" class="img-responsive" />
+        </a>
+    </div>
+      
+    <div class="col-xs-12 col-sm-6 col-md-4 display-block">
+        <a href="http://www.wbi-icc.com">
+            <img src="/assets/wbi_logo-751120221e670f0b66a66e6f80314c19.png" alt="Wright Brothers Institute" class="img-responsive" />
+        </a>
+    </div>
+      
+    <div class="col-xs-12 col-sm-6 col-md-4 display-block">
+        <a href="http://www.github.com">
+            <img src="/assets/GitHub_Logo-e33f30856127a7a1376647dd809d9a17.png" alt="Github" class="img-responsive" />
+        </a>
+    </div>
+      
+    <div class="col-xs-12 col-sm-6 col-md-4 display-block">
+        <a href="https://www.straphq.com/">
+            <img src="/assets/strap_logo-e1df4ae8b777241350a18d9d10e8bc83.png" alt="Strap" class="img-responsive" />
+        </a>
+    </div>
+      
+    <div class="col-xs-12 col-sm-6 col-md-4 display-block">
+        <a href="http://www.milb.com/index.jsp?sid=t459">
+            <img src="/assets/dragons_logo-80c838682140093f97d50cf277fdc94f.png" alt="Dayton Dragons" class="img-responsive" />
+        </a>
+    </div>
+      
+    <div class="col-xs-12 col-sm-6 col-md-4 display-block">
+        <a href="http://plot.ly">
+            <img src="/assets/plotly_logo-99188a3dc2d7167689af9e8af14213ca.png" alt="Plotly" class="img-responsive" />
+        </a>
+    </div>
+      
+    <div class="col-xs-12 col-sm-6 col-md-4 display-block">
+        <a href="http://aws.amazon.com/">
+            <img src="/assets/aws_logo-f38afed52c3013e432cbe358f5449bfb.png" alt="Amazon Web Services" class="img-responsive" />
+        </a>
+    </div>
+              
+    <div class="col-xs-12 col-sm-6 col-md-4 display-block">
+        <a href="http://www.mongodb.com/">
+            <img src="/assets/mongodb_logo-aa15964b6ea1dfc7c599c99a5d0480f9.png" alt="MongoDB Incorporated" class="img-responsive" />
+        </a>
+    </div>
+      
+    <div class="col-xs-12 col-sm-6 col-md-4 display-block">
+        <a href="http://www.openbci.com/">
+            <img src="/assets/openbci_logo-d3a25c6d67139ff90e18fd4cef25f0b7.png" alt="OpenBCI" class="img-responsive" />
+        </a>
+    </div>
+     
+
+</div>
+</section>
+
+<hr/>
+
+<section id="volunteers">
+
+    <h2 class="text-center">Volunteers</h2>
+    <div class="row">
+        
+        <div class="col-xs-12 col-sm-6 col-md-3 display-block volunteer ">
+            <a href="/volunteers/jhughes.html">
+                <img src="/assets/jhughes-e83c7b8985592ce8d4428cdcc166ba17.jpg" class="img-responsive img-rounded" />
+                <div class="caption text-center">
+                    <h3>Jeff Hughes</h3>
+                    <h4>The Hunter</4>
+                </div>
+            </a>
+        </div>
+        
+        <div class="col-xs-12 col-sm-6 col-md-3 display-block volunteer ">
+            <a href="/volunteers/jrosenstengel.html">
+                <img src="/assets/jrosenstengel-a7a95ac06bd220867abf61a0c3b73323.jpg" class="img-responsive img-rounded" />
+                <div class="caption text-center">
+                    <h3>John Rosenstengel</h3>
+                    <h4>The Miner</4>
+                </div>
+            </a>
+        </div>
+        
+        <div class="col-xs-12 col-sm-6 col-md-3 display-block volunteer ">
+            <a href="/volunteers/sgalster.html">
+                <img src="/assets/sgalster-919bd746c165f6936c408037ca299b2e.jpg" class="img-responsive img-rounded" />
+                <div class="caption text-center">
+                    <h3>Scott Galster</h3>
+                    <h4>Lord of the Sensors</4>
+                </div>
+            </a>
+        </div>
+         
+        <div class="col-xs-12 col-sm-6 col-md-3 display-block volunteer ">
+            <a href="#vModal" data-toggle="modal" data-target="#vModal" role="dialog">
+                <img src="
+        
+            /assets/apm-e2f24f04a1c640f63d1a33181f0476a1.png
+        
+            " class="img-responsive img-rounded" />
+            </a>
+            <div class="caption text-center">
+                <h3>Andrea P. M.</h3>
+                <h4>Lady X</h4>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="vModal" tabindex="-1" role="dialog" aria-labelledby="vModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                            <span class="sr-only">Close</span>
+                        </button>
+                        <h4 class="modal-title" id="vModalLabel">Andrea P. M.</h4>
+                    </div>
+                    <div class="modal-body">
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
+        <div class="col-xs-12 col-sm-6 col-md-3 display-block volunteer ">
+            <a href="#vModal0" data-toggle="modal" data-target="#vModal0" role="dialog">
+                <img src="
+        
+            /assets/arenner-23959aea4ad0e9dfe8fbe6f29dcc872c.png
+        
+            " class="img-responsive img-rounded" />
+            </a>
+            <div class="caption text-center">
+                <h3>Adam Renner</h3>
+                <h4>All Your Tech Are Belong to Us</h4>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="vModal0" tabindex="-1" role="dialog" aria-labelledby="vModalLabel0" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                            <span class="sr-only">Close</span>
+                        </button>
+                        <h4 class="modal-title" id="vModalLabel0">Adam Renner</h4>
+                    </div>
+                    <div class="modal-body">
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
+        <div class="col-xs-12 col-sm-6 col-md-3 display-block volunteer ">
+            <a href="#vModal1" data-toggle="modal" data-target="#vModal1" role="dialog">
+                <img src="
+        
+            /assets/boblee-462a4a307cd4b61e5066eb0d8ec90741.jpg
+        
+            " class="img-responsive img-rounded" />
+            </a>
+            <div class="caption text-center">
+                <h3>Bob Lee</h3>
+                <h4>Not-So-Angry Birdman</h4>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="vModal1" tabindex="-1" role="dialog" aria-labelledby="vModalLabel1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                            <span class="sr-only">Close</span>
+                        </button>
+                        <h4 class="modal-title" id="vModalLabel1">Bob Lee</h4>
+                    </div>
+                    <div class="modal-body">
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
+        <div class="col-xs-12 col-sm-6 col-md-3 display-block volunteer ">
+            <a href="#vModal2" data-toggle="modal" data-target="#vModal2" role="dialog">
+                <img src="
+        
+            /assets/btabares-1fc5326ad16b831c0793ad41720a99f4.png
+        
+            " class="img-responsive img-rounded" />
+            </a>
+            <div class="caption text-center">
+                <h3>Brian Tabares</h3>
+                <h4>Mr. Yum Yum</h4>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="vModal2" tabindex="-1" role="dialog" aria-labelledby="vModalLabel2" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                            <span class="sr-only">Close</span>
+                        </button>
+                        <h4 class="modal-title" id="vModalLabel2">Brian Tabares</h4>
+                    </div>
+                    <div class="modal-body">
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
+        <div class="col-xs-12 col-sm-6 col-md-3 display-block volunteer ">
+            <a href="#vModal3" data-toggle="modal" data-target="#vModal3" role="dialog">
+                <img src="
+        
+            /assets/caudette-27393a13bc2b437f5b2413e36974d872.jpg
+        
+            " class="img-responsive img-rounded" />
+            </a>
+            <div class="caption text-center">
+                <h3>Chip Audette</h3>
+                <h4>The Mind Reader</h4>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="vModal3" tabindex="-1" role="dialog" aria-labelledby="vModalLabel3" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                            <span class="sr-only">Close</span>
+                        </button>
+                        <h4 class="modal-title" id="vModalLabel3">Chip Audette</h4>
+                    </div>
+                    <div class="modal-body">
+                        With an interest in bio-sensors fueled by his day job (R&D Engineer at Creare, Hanover, NH), Chip has developed a number of wearable sensor systems, mostly for real-time health monitoring for military and civilian applications.  Sitting cozily in his office one day, Chip stumbled upon an opportunity to develop a low-cost, open-source EEG system.  On that day “EEG Hacker” was born.  By partnering with Joel Murphy and Conor Russomanno, who went and started OpenBCI based on this opportunity, Chip now spends his free time making things move with his mind.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
+        <div class="col-xs-12 col-sm-6 col-md-3 display-block volunteer ">
+            <a href="#vModal4" data-toggle="modal" data-target="#vModal4" role="dialog">
+                <img src="
+        
+            /assets/crussomanno-79e9ec2957b59be7a0691f2ceca6ff14.jpg
+        
+            " class="img-responsive img-rounded" />
+            </a>
+            <div class="caption text-center">
+                <h3>Conor Russomanno</h3>
+                <h4>The Hat Maker</h4>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="vModal4" tabindex="-1" role="dialog" aria-labelledby="vModalLabel4" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                            <span class="sr-only">Close</span>
+                        </button>
+                        <h4 class="modal-title" id="vModalLabel4">Conor Russomanno</h4>
+                    </div>
+                    <div class="modal-body">
+                        OpenBCI co-founder and CEO, Conor Russomanno, comes from a mixed background of art, engineering, and science. He has dedicated the first chapter of his career to interfacing the brain, rethinking business, and turning crazy ideas into reality.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
+        <div class="col-xs-12 col-sm-6 col-md-3 display-block volunteer ">
+            <a href="#vModal5" data-toggle="modal" data-target="#vModal5" role="dialog">
+                <img src="
+        
+            /assets/dustin_armstrong-cd4e7097d2005fbd932c45ec64472823.jpg
+        
+            " class="img-responsive img-rounded" />
+            </a>
+            <div class="caption text-center">
+                <h3>Dustin Armstrong</h3>
+                <h4>More Human Than Posthuman</h4>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="vModal5" tabindex="-1" role="dialog" aria-labelledby="vModalLabel5" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                            <span class="sr-only">Close</span>
+                        </button>
+                        <h4 class="modal-title" id="vModalLabel5">Dustin Armstrong</h4>
+                    </div>
+                    <div class="modal-body">
+                        Dustin is a designer and front-end devloper with a degree in advertising and graphic design from the School of Advertising Art in Kettering, Ohio. He is currently working for local Rails development firm Littlelines, and runs Posthuman LLC in his free time.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
+        <div class="col-xs-12 col-sm-6 col-md-3 display-block volunteer ">
+            <a href="#vModal6" data-toggle="modal" data-target="#vModal6" role="dialog">
+                <img src="
+        
+            /assets/dbest-b03c1c7b48af7f77e4ea50180718b287.jpeg
+        
+            " class="img-responsive img-rounded" />
+            </a>
+            <div class="caption text-center">
+                <h3>David Best</h3>
+                <h4>The Best Dave</h4>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="vModal6" tabindex="-1" role="dialog" aria-labelledby="vModalLabel6" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                            <span class="sr-only">Close</span>
+                        </button>
+                        <h4 class="modal-title" id="vModalLabel6">David Best</h4>
+                    </div>
+                    <div class="modal-body">
+                        Dave is a software engineer and amateur community organizer. He has been a DBA, a firmware engineer, and an OS developer, but now enjoys slumming around with open source web development. He spends most of his free time with his wife and kids in Miamisburg, Ohio.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
+        <div class="col-xs-12 col-sm-6 col-md-3 display-block volunteer ">
+            <a href="#vModal7" data-toggle="modal" data-target="#vModal7" role="dialog">
+                <img src="
+        
+            /assets/dcaraway-37f60812d40be05fc3c62fcc806dd301.jpeg
+        
+            " class="img-responsive img-rounded" />
+            </a>
+            <div class="caption text-center">
+                <h3>Dave Caraway</h3>
+                <h4>Knows What the Fox Said</h4>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="vModal7" tabindex="-1" role="dialog" aria-labelledby="vModalLabel7" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                            <span class="sr-only">Close</span>
+                        </button>
+                        <h4 class="modal-title" id="vModalLabel7">Dave Caraway</h4>
+                    </div>
+                    <div class="modal-body">
+                        Dave is a professional civic hacker with the General Services Administration. In his free time, he leads Code for Dayton, a civic technology non-profit, and the Collider Project, an economic development social group. Dave was a Round 2 Presidential Innovation Fellow with the White House and helped implement data transparency requirements across the federal government. In 2012, he founded Fogmine, a software company specializing in analytics and data-driven applications. He holds a BS in Electrical Engineering and an MS in Computer Science. Dave enjoys trail running near his home in Beavercreek, Ohio, where he lives with his wife and two energetic kids.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
+        <div class="col-xs-12 col-sm-6 col-md-3 display-block volunteer ">
+            <a href="#vModal8" data-toggle="modal" data-target="#vModal8" role="dialog">
+                <img src="
+        
+            /assets/dwirth-b22385552515b87d6c9f1f0e3a8c4013.jpg
+        
+            " class="img-responsive img-rounded" />
+            </a>
+            <div class="caption text-center">
+                <h3>David Wirth</h3>
+                <h4>The Mad Scientist</h4>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="vModal8" tabindex="-1" role="dialog" aria-labelledby="vModalLabel8" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                            <span class="sr-only">Close</span>
+                        </button>
+                        <h4 class="modal-title" id="vModalLabel8">David Wirth</h4>
+                    </div>
+                    <div class="modal-body">
+                        My name is David Wirth and for the past 7 years I have been experimenting and discovering new and improved ways to scare my friends, family and neighbors with the wonders of science! Through the years I have created railguns, coilguns, high power LEDs, high voltage devices, freeze guns, high pressure squirt guns, cryogenic coolers, rocket engines, and much more. My thesis at UCLA was on the experimental study of photoreactive nanoparticles which heat up when exposed to light. This property was leveraged in order to create a novel re-startable solid rocket engine which was published with my MS thesis in 2012. Since then, I have worked with AFRL, the Discovery Channel, the USAF, and the National Air and Space Intelligence Center (NASIC), lending my skills in to those in need.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
+        <div class="col-xs-12 col-sm-6 col-md-3 display-block volunteer ">
+            <a href="#vModal9" data-toggle="modal" data-target="#vModal9" role="dialog">
+                <img src="
+        
+            /assets/ed-5e1a56c795e2d8bef8e0b88584923087.jpg
+        
+            " class="img-responsive img-rounded" />
+            </a>
+            <div class="caption text-center">
+                <h3>Ed Heltzel</h3>
+                <h4>Make It Rain!</h4>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="vModal9" tabindex="-1" role="dialog" aria-labelledby="vModalLabel9" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                            <span class="sr-only">Close</span>
+                        </button>
+                        <h4 class="modal-title" id="vModalLabel9">Ed Heltzel</h4>
+                    </div>
+                    <div class="modal-body">
+                        Ed is the mind behind Rainy Day Media LLC (RDM), who’s an avid web developer and a closet logo designer.  Who's usually up to my eyeballs with front-end development and dipping my beak into NodeJS or hitting the gym.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
+        <div class="col-xs-12 col-sm-6 col-md-3 display-block volunteer ">
+            <a href="#vModal10" data-toggle="modal" data-target="#vModal10" role="dialog">
+                <img src="
+        
+            /assets/avados-b199b703046742c8a5f250ae4460278a.jpg
+        
+            " class="img-responsive img-rounded" />
+            </a>
+            <div class="caption text-center">
+                <h3>Alex Vados</h3>
+                <h4>The Visualizer</h4>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="vModal10" tabindex="-1" role="dialog" aria-labelledby="vModalLabel10" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                            <span class="sr-only">Close</span>
+                        </button>
+                        <h4 class="modal-title" id="vModalLabel10">Alex Vados</h4>
+                    </div>
+                    <div class="modal-body">
+                        Alex is an Interactive Designer/Engineer, currently working for the Data Visualization startup Plotly. Heading up the Workshop at their Montreal office, Alex loves working with anything interactive. Observing and creating interactions between humans and machines; these are a few of his favourite things.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
+        <div class="col-xs-12 col-sm-6 col-md-3 display-block volunteer ">
+            <a href="#vModal11" data-toggle="modal" data-target="#vModal11" role="dialog">
+                <img src="
+        
+            /assets/jscott-ab54050ef7445d9956f1084d25adc86f.jpg
+        
+            " class="img-responsive img-rounded" />
+            </a>
+            <div class="caption text-center">
+                <h3>Jeff Scott</h3>
+                <h4>The Security</h4>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="vModal11" tabindex="-1" role="dialog" aria-labelledby="vModalLabel11" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                            <span class="sr-only">Close</span>
+                        </button>
+                        <h4 class="modal-title" id="vModalLabel11">Jeff Scott</h4>
+                    </div>
+                    <div class="modal-body">
+                        Jeff works as Research Engineer and Product Lead at Tenet3, LLC where he is developing technologies and tools to analyze complex, cyber-physical systems. His previous research includes work in modular, open systems architectures for rapid satellite design, assembly, integration and test, and in automated analysis techniques for complex, closed-source binary programs. He has a breadth of experience in cyber-physical systems security, including reverse engineering and vulnerability analysis techniques, formal and stochastic methods, compilers, and anti-tamper and software protection technologies. Prior to joining Tenet3, Mr. Scott worked as a Research Engineer and Project Manager for the Air Force Research Lab Space Electronics branch, and as Chief of Research Operations for the Air Force Institute of Technology’s Center for Cyberspace Research. Mr. Scott received his B.S. degree in Electrical Engineering from the University of Portland and his M.S. in Cyber Operations from the Air Force Institute of Technology.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
+        <div class="col-xs-12 col-sm-6 col-md-3 display-block volunteer ">
+            <a href="#vModal12" data-toggle="modal" data-target="#vModal12" role="dialog">
+                <img src="
+        
+            /assets/jmurphy-848a40863689e7f0623f34b4fa31151e.jpg
+        
+            " class="img-responsive img-rounded" />
+            </a>
+            <div class="caption text-center">
+                <h3>Joel Murphy</h3>
+                <h4>The Thought Leader</h4>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="vModal12" tabindex="-1" role="dialog" aria-labelledby="vModalLabel12" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                            <span class="sr-only">Close</span>
+                        </button>
+                        <h4 class="modal-title" id="vModalLabel12">Joel Murphy</h4>
+                    </div>
+                    <div class="modal-body">
+                        OpenBCI co-founder and President, Joel Murphy, has an extensive background in designing and teaching open-source bio-hardware. He was the co-creator of the Pulse Sensor, an optical heart rate monitor for Arduino, and now leads the technology development of open-source brain-computer interfaces.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
+        <div class="col-xs-12 col-sm-6 col-md-3 display-block volunteer ">
+            <a href="#vModal13" data-toggle="modal" data-target="#vModal13" role="dialog">
+                <img src="
+        
+            /assets/bbalter-82d5c3607b5719a45f7fca753647d699.jpeg
+        
+            " class="img-responsive img-rounded" />
+            </a>
+            <div class="caption text-center">
+                <h3>Ben Balter</h3>
+                <h4>Lightning in a Bottle</h4>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="vModal13" tabindex="-1" role="dialog" aria-labelledby="vModalLabel13" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                            <span class="sr-only">Close</span>
+                        </button>
+                        <h4 class="modal-title" id="vModalLabel13">Ben Balter</h4>
+                    </div>
+                    <div class="modal-body">
+                        Named one of the top 25 most influential people in government and technology and described by the US Chief Technology Officer as one of “the baddest of the badass innovators,” and by the White House Director of Digital Strategy as “lightning in a bottle,” Ben Balter is a Government Evangelist at GitHub — the world’s largest software development network — where he leads the efforts to encourage adoption of open source philosophies, making all levels of government better, one repository at a time.
+Previously, Ben was a member of the inaugural class of Presidential Innovation Fellows where he served as entrepreneur in residence reimagining the role of technology in brokering the relationship between citizens and government. Before that, he was a Fellow in the Office of the US Chief Information Officer within the Executive Office of the President where he was instrumental in drafting the President’s Digital Strategy and Open Data Policy, on the SoftWare Automation and Technology (SWAT) Team, the White House’s first and only agile development team, and as a New Media Fellow, in the Federal Communications Commission’s Office of the Managing Director where he played a central role in shaping the agency’s reimagined web presence. His paper, Towards a More Agile Government was published in the Public Contract Law Journal, arguing that Federal IT Procurement should be more amenable to modern, agile development methods.
+As an attorney passionate about the disruptive potential of technology, Ben holds a J.D. and an M.B.A. from the George Washington University and is a member of the DC Bar. When not trying to change the world, he enjoys tackling otherwise-impossible challenges to sharing information using nothing more than duct tape, version control, and occasionally a pack of bubblegum.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
+        <div class="col-xs-12 col-sm-6 col-md-3 display-block volunteer ">
+            <a href="#vModal14" data-toggle="modal" data-target="#vModal14" role="dialog">
+                <img src="
+        
+            /assets/phenshaw-d0905bd656394c6c25f4ca7005d1eb4a.png
+        
+            " class="img-responsive img-rounded" />
+            </a>
+            <div class="caption text-center">
+                <h3>Patrick Henshaw</h3>
+                <h4>Strappy</h4>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="vModal14" tabindex="-1" role="dialog" aria-labelledby="vModalLabel14" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                            <span class="sr-only">Close</span>
+                        </button>
+                        <h4 class="modal-title" id="vModalLabel14">Patrick Henshaw</h4>
+                    </div>
+                    <div class="modal-body">
+                        Airborne Ranger turned Entrepreneur. Prior to Strap Patrick lead troops through the company level in Afghanistan with roles in managing teams/programs with budgets of $36 Billion. Patrick is a West Point Graduate who also has a Master’s in Engineering. He is in charge of the day-to-day operations and the execution of the overall Strap vision and direction.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
+        <div class="col-xs-12 col-sm-6 col-md-3 display-block volunteer ">
+            <a href="#vModal15" data-toggle="modal" data-target="#vModal15" role="dialog">
+                <img src="
+        
+            /assets/mbonterre-af609523ee7a31fa82393ce35d5448b7.png
+        
+            " class="img-responsive img-rounded" />
+            </a>
+            <div class="caption text-center">
+                <h3>Marcelle Bonterre</h3>
+                <h4>Strappy Dev</h4>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="vModal15" tabindex="-1" role="dialog" aria-labelledby="vModalLabel15" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                            <span class="sr-only">Close</span>
+                        </button>
+                        <h4 class="modal-title" id="vModalLabel15">Marcelle Bonterre</h4>
+                    </div>
+                    <div class="modal-body">
+                        When not writing software, Marcelle enjoys rock climbing and backpacking, a vocation that spans the past 8 years. When time allows, he likes writing classical music, and most recently, he's taken to learning how to draw and paint. Above all else, he enjoys the various opportunities for fun problem-solving his hobbies and career afford him. Marcelle also enjoys his trips back to his homeland of Trinidad & Tobago whenever they can happen.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
+        <div class="col-xs-12 col-sm-6 col-md-3 display-block volunteer ">
+            <a href="#vModal16" data-toggle="modal" data-target="#vModal16" role="dialog">
+                <img src="
+        
+            /assets/lpineiro-6880fc4139dae970cb27ef2bf13e05c5.jpg
+        
+            " class="img-responsive img-rounded" />
+            </a>
+            <div class="caption text-center">
+                <h3>Luis Pineiro</h3>
+                <h4>Lethal with a Keyboard</h4>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="vModal16" tabindex="-1" role="dialog" aria-labelledby="vModalLabel16" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                            <span class="sr-only">Close</span>
+                        </button>
+                        <h4 class="modal-title" id="vModalLabel16">Luis Pineiro</h4>
+                    </div>
+                    <div class="modal-body">
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
+        <div class="col-xs-12 col-sm-6 col-md-3 display-block volunteer ">
+            <a href="#vModal17" data-toggle="modal" data-target="#vModal17" role="dialog">
+                <img src="
+        
+            /assets/lburnett-7f8f21a7cb05a1e610177b2d755f5427.jpg
+        
+            " class="img-responsive img-rounded" />
+            </a>
+            <div class="caption text-center">
+                <h3>Luke Burnett</h3>
+                <h4>0xDEADBEEF</h4>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="vModal17" tabindex="-1" role="dialog" aria-labelledby="vModalLabel17" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                            <span class="sr-only">Close</span>
+                        </button>
+                        <h4 class="modal-title" id="vModalLabel17">Luke Burnett</h4>
+                    </div>
+                    <div class="modal-body">
+                        Luke is a student at Wright State University and is a second year BSCS. He started programming in high school after his gaming addiction peaked his curiosity. Currently, Luke is working for the AFRL's Discovery Lab as a project consultant. Projects completed range from projects with the DISA organisation all the way to IoT home-automation. Luke attended his first hackathon last year(MHacks II) and has since been hooked on the late night drive to produce as fast as humanly possible. His interests are currently mobile phone security topics, OSINT data manipulation, and RoP concepts and application in phone-based environments. When Luke isn't reading, he is running around Dayton or find more ways to collaborate on his already thin schedule. 
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
+        <div class="col-xs-12 col-sm-6 col-md-3 display-block volunteer ">
+            <a href="#vModal18" data-toggle="modal" data-target="#vModal18" role="dialog">
+                <img src="
+        
+            /assets/meckold-195a3caedc0ff351ec71b14000ab8d62.png
+        
+            " class="img-responsive img-rounded" />
+            </a>
+            <div class="caption text-center">
+                <h3>Monika Eckold</h3>
+                <h4>Queen of Hackers</h4>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="vModal18" tabindex="-1" role="dialog" aria-labelledby="vModalLabel18" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                            <span class="sr-only">Close</span>
+                        </button>
+                        <h4 class="modal-title" id="vModalLabel18">Monika Eckold</h4>
+                    </div>
+                    <div class="modal-body">
+                        Monika Eckold is a Behavioral Scientist in the United States Air Force, originally commissioned from UCLA in Los Angeles, California. She received her B.S. from UCLA and is currently pursuing her Masters at Liberty University. During her time at Wright-Patterson Air Force Base, she worked closely with the military's cyber warfare special operation squadrons with a focus on stress, performance, and workload assessment. Within her involvements in the Air Force Research Laboratory, Monika has led cognitive task analysis workshops and logistical planning for human performance laboratories. In her free time and throughout her work day, she enjoys over eating and hopes to one day read people's minds.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
+        <div class="col-xs-12 col-sm-6 col-md-3 display-block volunteer ">
+            <a href="#vModal19" data-toggle="modal" data-target="#vModal19" role="dialog">
+                <img src="
+        
+            /assets/mstieger-dc4346096e566e445efd895301ba4f30.jpg
+        
+            " class="img-responsive img-rounded" />
+            </a>
+            <div class="caption text-center">
+                <h3>Martin Stieger</h3>
+                <h4>Mr. Roboto</h4>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="vModal19" tabindex="-1" role="dialog" aria-labelledby="vModalLabel19" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                            <span class="sr-only">Close</span>
+                        </button>
+                        <h4 class="modal-title" id="vModalLabel19">Martin Stieger</h4>
+                    </div>
+                    <div class="modal-body">
+                        Martin is a Research Engineer with the Wright State Research Institute and serves as Information Technology Manager for the Wright Brothers Institute. He holds a master’s degree in Industrial and Human Factors Engineering from Wright State University. He has conducted Air Force sponsored research in the area of network-centric operations/warfare and co-authored a book in the area of simulation modeling. As part of his responsibilities at Wright Brothers Institute, he has provided project support and technology guidance to programs including Discovery Lab STEM initiatives and IDEA Lab open innovation initiatives.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
+        <div class="col-xs-12 col-sm-6 col-md-3 display-block volunteer ">
+            <a href="#vModal20" data-toggle="modal" data-target="#vModal20" role="dialog">
+                <img src="
+        
+            /assets/mmiddendorf-3bd173e90bb9ae06fe11f1ec40a70342.jpg
+        
+            " class="img-responsive img-rounded" />
+            </a>
+            <div class="caption text-center">
+                <h3>Matt Middendorf</h3>
+                <h4>The Real Deal</h4>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="vModal20" tabindex="-1" role="dialog" aria-labelledby="vModalLabel20" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                            <span class="sr-only">Close</span>
+                        </button>
+                        <h4 class="modal-title" id="vModalLabel20">Matt Middendorf</h4>
+                    </div>
+                    <div class="modal-body">
+                        Mr. Middendorf is currently the project lead for the Human Universal Measurement and Analysis Network (HUMAN) Laboratory located at Wright Patterson Air Force Base, Dayton Ohio. This laboratory is in the Applied Neuroscience Branch (AFRL 711 HPW/RHCP). Mr. Middendorf has 34 years of experience conducting experimental research with a focus on real-time programming, algorithm development, and signal processing.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
+        <div class="col-xs-12 col-sm-6 col-md-3 display-block volunteer ">
+            <a href="#vModal21" data-toggle="modal" data-target="#vModal21" role="dialog">
+                <img src="
+        
+            /assets/mclark-5126592641c43ac7ad9d208b01a005b0.jpg
+        
+            " class="img-responsive img-rounded" />
+            </a>
+            <div class="caption text-center">
+                <h3>Michael Clark</h3>
+                <h4>Crypto and Sliced Bread</h4>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="vModal21" tabindex="-1" role="dialog" aria-labelledby="vModalLabel21" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                            <span class="sr-only">Close</span>
+                        </button>
+                        <h4 class="modal-title" id="vModalLabel21">Michael Clark</h4>
+                    </div>
+                    <div class="modal-body">
+                        I am a researcher at Tenet3, a cyber security company in Dayton, OH. I've been called a bit head (as opposed to a dB chaser). I love to learn how things work and try to get them to do things they shouldn’t. I think that cryptography is the coolest thing since sliced bread since, by design, you get to know everything about it yet (theoretically) can’t get it to do things it shouldn’t. In my spare time I like to teach my little girls how engines work and make delicious bar-b-que for the family to eat.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
+        <div class="col-xs-12 col-sm-6 col-md-3 display-block volunteer ">
+            <a href="#vModal22" data-toggle="modal" data-target="#vModal22" role="dialog">
+                <img src="
+        
+            /assets/jsantiago-cf5a04ec373c34645ff61ed4e5a93f90.jpg
+        
+            " class="img-responsive img-rounded" />
+            </a>
+            <div class="caption text-center">
+                <h3>John Santiago</h3>
+                <h4>Such Mongo. Wow.</h4>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="vModal22" tabindex="-1" role="dialog" aria-labelledby="vModalLabel22" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                            <span class="sr-only">Close</span>
+                        </button>
+                        <h4 class="modal-title" id="vModalLabel22">John Santiago</h4>
+                    </div>
+                    <div class="modal-body">
+                        I am full time web developer for Command Alkon in Columbus, OH. I have a background in Animation and Illustration and got into programming about six years ago. I’m currently working with MongoDB and a bulk of other web technologies to help build real time web applications.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
+    </div>
+
+</section>
+
+</div>
+
+<footer >
+    <nav class="navbar navbar-inverse" role="navigation">
+        <div class="container">
+            <div class="navbar-left">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="http://www.wpafb.af.mil/AFRL/">&copy; 2014 LabHack</a></li>
+                    <li><a href="/contact">Contact Us</a>
+                    </li>
+                    <li><a href="/donate"><i class="fa fa-heart" style="color: red;"></i> Donate</a>
+                a></li>
+                </ul>
+            </div>
+            <div class="navbar-right">
+                <ul class="nav navbar-nav">
+                    
+                    <li>
+                        <a href="https://twitter.com/aflabhack" title="Follow on Twitter" target="_blank"><i class="fa fa-twitter black"></i></a>
+                    </li>
+                     
+                    <li>
+                        <a href="http://facebook.com/airforcehackathon" title="Follow on Facebook" target="_blank"><i class="fa fa-facebook black"></i></a>
+                    </li>
+                    
+                    <li>
+                        <a href="/feed.xml" title="RSS Feed">
+                            <i class="fa fa-rss black"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</footer>
+
+<script src="/assets/jquery-1.11.1.min-a669318068f8004cd37132b83fc23947.js"></script>
+<script src="/assets/main-5b219ced66cbcf31c17e87e0a07556db.js"></script>
+
+
+
+
+
+  <!--google analytics tracking code here-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-53951039-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+
+<script src="/assets/timecircles-b216359e802f8ee140f1c823e82e5cef.js"></script>
+<script type="text/javascript">
+$('.countdown').TimeCircles({circle_bg_color: "#FFFFFF", fg_width: 0.1, time: {
+    Days: { color: "#7D83B0" },
+    Hours: { color: "#535A92" },
+    Minutes: { color: "#182058" },
+    Seconds: { color: "#080E3B" }
+}});
+</script>
+
+
+<script src="/assets/bootstrap/transition-86ce8a906037cf55cf5401cc727e08f1.js"></script>
+<script src="/assets/bootstrap/collapse-1336fb649c67ab95720e667af374f3f0.js"></script>
+<script src="/assets/bootstrap/modal-cdcb0dd2802a9aac07748275a34f310c.js"></script>
+<script src="/assets/bootstrap/dropdown-3243ce0f4f745459d824fda247d35fc6.js"></script>
+
+
+<script>
+(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=367387766748148&version=v2.0";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+
+<script>
+! function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0],
+        p = /^http:/.test(d.location) ? 'http' : 'https';
+    if (!d.getElementById(id)) {
+        js = d.createElement(s);
+        js.id = id;
+        js.src = p + "://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }
+}(document, "script", "twitter-wjs");
+</script>
+
+
+</body>
+</html>
